@@ -1,27 +1,13 @@
 import { Routes, RouterModule } from '@angular/router';
-import { PagesComponent } from './pages/pages.component';
-
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
-import { Grafica1Component } from './pages/grafica1/grafica1.component';
-import { ProgressComponent } from './pages/progress/progress.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 import { RegisterComponent } from './login/register.component';
 
 
 
-
+// creamos pages para que login este en solo en el modulo principal
 const appRoutes: Routes = [
-    { path: '',
-     component: PagesComponent,
-     children: [
-        { path: 'dashboard', component: DashboardComponent },
-        { path: 'grafica1', component: Grafica1Component },
-        { path: 'progress', component: ProgressComponent },
-        { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
-       ]
-     },
-
+ 
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: '**', component: NopagefoundComponent }
