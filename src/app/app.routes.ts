@@ -7,7 +7,6 @@ import { RegisterComponent } from './login/register.component';
 
 // creamos pages para que login este en solo en el modulo principal
 const appRoutes: Routes = [
- 
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: '**', component: NopagefoundComponent }

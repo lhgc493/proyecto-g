@@ -3,6 +3,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { ProgressComponent } from './progress/progress.component';
 import { PagesComponent } from './pages.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { MantenimientosComponent } from './mantenimientos/mantenimientos.component';
+// import { RolComponent } from './mantenimientos/rol/rol.component';
 
 
 
@@ -14,6 +17,9 @@ const pagesRoutes: Routes = [
        { path: 'dashboard', component: DashboardComponent },
        { path: 'grafica1', component: Grafica1Component },
        { path: 'progress', component: ProgressComponent },
+       { path: 'account-setting', component: AccountSettingsComponent },
+       { path: 'mantenimientos', component: MantenimientosComponent },
+      // { path: 'mantenimientos/rol', component: RolComponent },
        { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
       ]
     },
