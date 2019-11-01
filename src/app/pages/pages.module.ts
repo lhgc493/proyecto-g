@@ -14,6 +14,8 @@ import { MantenimientosComponent } from './mantenimientos/mantenimientos.compone
 
 // modulos
 import { MantenimientoModule } from './mantenimientos/mantenimientos.module';
+import { RxjsComponent } from './rxjs/rxjs.component';
+
 
 
 
@@ -25,7 +27,8 @@ import { MantenimientoModule } from './mantenimientos/mantenimientos.module';
         Grafica1Component,
         IncrementadorComponent,
         AccountSettingsComponent,
-        MantenimientosComponent
+        MantenimientosComponent,
+        RxjsComponent,
 
     ],
     exports: [

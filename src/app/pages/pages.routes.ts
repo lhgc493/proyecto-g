@@ -5,7 +5,10 @@ import { ProgressComponent } from './progress/progress.component';
 import { PagesComponent } from './pages.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { MantenimientosComponent } from './mantenimientos/mantenimientos.component';
+
 // import { RolComponent } from './mantenimientos/rol/rol.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+
 
 
 
@@ -19,6 +22,7 @@ const pagesRoutes: Routes = [
        { path: 'progress', component: ProgressComponent },
        { path: 'account-setting', component: AccountSettingsComponent },
        { path: 'mantenimientos', component: MantenimientosComponent },
+       { path: 'rxjs', component: RxjsComponent },
       // { path: 'mantenimientos/rol', component: RolComponent },
        { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
       ]
