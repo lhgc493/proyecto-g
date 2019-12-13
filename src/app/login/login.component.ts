@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 import { UsuarioModel } from '../models/usuario.model';
 import swal from 'sweetalert';
 import { LoginService } from '../services/index.service';
@@ -8,6 +9,10 @@ import { UsuarioService } from '../services/index.service';
 
 declare function init_plugins();
 declare const gapi: any; // declaramos esta libreria para usasr google sign in
+=======
+
+declare function init_plugins();
+>>>>>>> f54b1b87e7c1cde66ea5a4bf4ebd847c07605840
 
 @Component({
   selector: 'app-login',
@@ -16,6 +21,7 @@ declare const gapi: any; // declaramos esta libreria para usasr google sign in
 })
 export class LoginComponent implements OnInit {
 
+<<<<<<< HEAD
  recuerdame: boolean = false;
  email: string;
 
@@ -71,5 +77,15 @@ export class LoginComponent implements OnInit {
     });
 
 
+=======
+  constructor(public router: Router) { }
+
+  ngOnInit() {
+    init_plugins();
+  }
+  ingresar() {
+    console.log('Ingresando..');
+    this.router.navigate(['/dashboard']);
+>>>>>>> f54b1b87e7c1cde66ea5a4bf4ebd847c07605840
   }
 }

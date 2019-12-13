@@ -14,6 +14,7 @@ export class SidebarService {
         { titulo: 'Graficas', url: '/grafica1' },
         { titulo: 'Rxjs', url: '/rxjs' }
       ]
+<<<<<<< HEAD
     },
     {
       titulo: 'Registro',
@@ -36,6 +37,9 @@ export class SidebarService {
       ]
     },
 
+=======
+    }
+>>>>>>> f54b1b87e7c1cde66ea5a4bf4ebd847c07605840
   ];
 
   constructor() { }

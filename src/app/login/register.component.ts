@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import swal from 'sweetalert';
+<<<<<<< HEAD
 import { UsuarioService } from '../services/index.service';
 import { UsuarioModel } from '../models/usuario.model';
 import { Router } from '@angular/router';
+=======
+>>>>>>> f54b1b87e7c1cde66ea5a4bf4ebd847c07605840
 
 
 
@@ -18,9 +21,13 @@ export class RegisterComponent implements OnInit {
 
   form: FormGroup;
 
+<<<<<<< HEAD
   constructor(private usuService: UsuarioService, public router: Router) { }
 
 
+=======
+  constructor() { }
+>>>>>>> f54b1b87e7c1cde66ea5a4bf4ebd847c07605840
 
   sonIguales(campo1: string, campo2: string) {
   return (group: FormGroup) => {
@@ -41,6 +48,7 @@ export class RegisterComponent implements OnInit {
     init_plugins();
 
     this.form = new FormGroup({
+<<<<<<< HEAD
       nombre: new FormControl(null, Validators.required),
       email: new FormControl(null, [Validators.required, Validators.email]),
       password: new FormControl (null, Validators.required),
@@ -52,6 +60,18 @@ export class RegisterComponent implements OnInit {
   public registrarUsuario() {
     if ( this.form.invalid ) {
       // swal ('Importante', 'Password deben ser iguales', 'warning');
+=======
+      email: new FormControl(null, [Validators.required, Validators.email]),
+      pwd: new FormControl (null, Validators.required),
+      pwd1: new FormControl (null, Validators.required),
+      condiciones: new FormControl (false)
+    }, { validators: this.sonIguales( 'pwd', 'pwd1') });
+  }
+
+  registrarUsuario() {
+    if ( this.form.invalid ) {
+      swal ('Importante', 'Password deben ser iguales', 'warning');
+>>>>>>> f54b1b87e7c1cde66ea5a4bf4ebd847c07605840
       return;
     }
     if ( !this.form.value.condiciones ) {
@@ -63,6 +83,7 @@ export class RegisterComponent implements OnInit {
 
     console.log('Forma valida', this.form.valid);
     console.log(this.form.value);
+<<<<<<< HEAD
 
     const usuario = new UsuarioModel(
       this.form.value.nombre,
@@ -78,4 +99,8 @@ export class RegisterComponent implements OnInit {
 
 
 
+=======
+  }
+
+>>>>>>> f54b1b87e7c1cde66ea5a4bf4ebd847c07605840
 }

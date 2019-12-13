@@ -1,16 +1,20 @@
 import { Injectable } from '@angular/core';
+<<<<<<< HEAD
 import { UsuarioModel } from 'src/app/models/usuario.model';
 import { HttpClient } from '@angular/common/http';
 import { URL_SERVICIOS } from '../../config/config';
 import swal from 'sweetalert';
 import { Router } from '@angular/router';
 import { map } from 'rxjs/operators';
+=======
+>>>>>>> f54b1b87e7c1cde66ea5a4bf4ebd847c07605840
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsuarioService {
 
+<<<<<<< HEAD
   usuario: UsuarioModel;
   token: string;
 
@@ -89,4 +93,7 @@ export class UsuarioService {
 
 
 
+=======
+  constructor() { }
+>>>>>>> f54b1b87e7c1cde66ea5a4bf4ebd847c07605840
 }
