@@ -1,0 +1,39 @@
+<div class="row animated fadeIn">
+
+    <div class="col-md-6">
+        <div class="card card-body">
+
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <form>
+                        <div class="form-group">
+                            <label>Nombre del rol</label>
+                            <input name="descripcion" type="text" class="form-control" [(ngModel)]="rol.descripcion" placeholder="Descripción del rol" required="true">
+                            <!-- [(ngModel)]="" -->
+                        </div>
+
+
+                        <button type="submit" (click)="create()" *ngIf="!rol.id else elseBlock" class="btn btn-success waves-effect waves-light m-r-10">
+                          <i class="fa fa-save"></i>
+                          Guardar
+                        </button>
+
+                        <ng-template #elseBlock>
+                            <button type="submit" (click)="update()" class="btn btn-success waves-effect waves-light m-r-10">
+                                        <i class="fa fa-save"></i>
+                                        Actualizar
+                                      </button>
+
+                        </ng-template>
+                        <a routerLink="/rol" class="btn btn-inverse waves-effect waves-light">Cancelar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
